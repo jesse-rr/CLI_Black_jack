@@ -1,12 +1,13 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
 public class TableActions {
 
     public List<String> createDeck() {
-        List<String> suits = List.of("♥", "♦", "♣", "♠");
-        List<String> cardNumbers = List.of("2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K");
+        List<String> suits = Arrays.asList("♥", "♦", "♣", "♠");
+        List<String> cardNumbers = Arrays.asList("2", "3", "4", "5", "6", "7", "8", "9", "10", "A", "J", "Q", "K");
         List<String> deck = new ArrayList<>();
 
         for (String num : cardNumbers) {

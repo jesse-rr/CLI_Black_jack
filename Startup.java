@@ -57,7 +57,7 @@ public class Startup {
                 username = userInput.next();
                 System.out.print("Enter password: ");
                 password = userInput.next();
-                if ((username.contains(" ") || username.isBlank()) || (password.contains(" ") || password.isBlank() || password.length() <= 5)) {
+                if ((username.contains(" ") || username.chars().allMatch(Character::isWhitespace) || (password.contains(" ") || password.chars().allMatch(Character::isWhitespace) || password.length() <= 5))) {
                     System.out.println("Username/password cannot have 'space', be blank, or have a password less than 5 characters.");
                 } else {
                     notValid = false;
@@ -108,7 +108,7 @@ public class Startup {
             System.out.print("Password: ");
             password = inputName.next();
 
-            if ((username.contains(" ") || username.isBlank()) || (password.contains(" ") || password.isBlank() || password.length() <= 5)) {
+            if ((username.contains(" ") || username.chars().allMatch(Character::isWhitespace)) || (password.contains(" ") || password.chars().allMatch(Character::isWhitespace) || password.length() <= 5)) {
                 System.out.println("Username/password cannot have 'space', be blank, or have a password less than 5 characters.");
             } else {
                 notValid = false;
