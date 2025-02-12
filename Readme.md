@@ -3,14 +3,13 @@
 </p>
 
 #### ♣️ ♦️ Requirements ♥️ ♠️
-- Java 15+ [ Text blocks are used ]
+- Java 17 [ Text blocks are used ]
 
 #### 🃏 Running the game 🃏 
 
 ```
-git clone
-javac CLI_Black_jack/*.java >
-java -cp CLI_Black_jack/run/ Startup
+git clone "[REPO URL]"
+java -cp CLI_Black_jack/ Startup
 ```
 
 __Feel free to contribute to the project, add new features, or report any bugs you encounter. Enjoy!__
